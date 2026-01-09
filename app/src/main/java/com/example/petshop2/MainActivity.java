@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Pettable> pettablePets = new ArrayList<Pettable>();
         pettablePets.add(cat);
         pettablePets.add(dog);
-        pettablePets.add(scorpion);
+        pettablePets.add(scorpion); // this should produce an error
+
+        Mood mood1 = new HappyMood();
+        Mood mood2 = new SadMood(new Date());
+
+        String mood1Text = mood1.getMoodString();
+        String mood2Text = mood2.getMoodString();
+
     }
 }

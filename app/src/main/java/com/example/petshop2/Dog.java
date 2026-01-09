@@ -2,9 +2,9 @@ package com.example.petshop2;
 
 import java.util.Date;
 
-public class Dog extends Pet implements Pettable{
+public class Dog extends Pet implements Pettable {
 
-    public Dog(String name){
+    public Dog(String name) {
         super(name);
     }
 
@@ -18,7 +18,7 @@ public class Dog extends Pet implements Pettable{
     }
 
     @Override
-    public voic Pet() {
+    public Void pet() {
         return null;
     }
 }
